@@ -1,20 +1,8 @@
-let Tasks = [
-  {
-    title: "1",
-    date: "01/01/2025",
+let Tasks = [{
+    title: "",
+    date: "",
     isDone: false,
-  },
-  {
-    title: "2",
-    date: "01/04/2025",
-    isDone: false,
-  },
-  {
-    title: "3",
-    date: "01/02/2025",
-    isDone: false,
-  },
-];
+  }];
 function getTasksFromStore() {
   let retrievedTasks = JSON.parse(localStorage.getItem("tasks"));
   Tasks = retrievedTasks ?? [];
